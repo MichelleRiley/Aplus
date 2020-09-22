@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Aplus.AutomationTesting.Features.WelcomePage
+namespace Aplus.AutomationTesting.Features.HomePage
 {
     using TechTalk.SpecFlow;
     using System;
@@ -48,7 +48,7 @@ namespace Aplus.AutomationTesting.Features.WelcomePage
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/WelcomePage", "FavouriteColourLabrador", "\tAs a user \r\n\tI want to select my favourite colour labrador\r\n\tSo that...", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/HomePage", "FavouriteColourLabrador", "\tAs a user \r\n\tI want to select my favourite colour labrador\r\n\tSo that...", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,7 +65,7 @@ namespace Aplus.AutomationTesting.Features.WelcomePage
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "FavouriteColourLabrador")))
             {
-                global::Aplus.AutomationTesting.Features.WelcomePage.FavouriteColourLabradorFeature.FeatureSetup(null);
+                global::Aplus.AutomationTesting.Features.HomePage.FavouriteColourLabradorFeature.FeatureSetup(null);
             }
         }
         
@@ -92,13 +92,13 @@ namespace Aplus.AutomationTesting.Features.WelcomePage
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Welcome page displays favourite colour labrador dropdown")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Homepage page displays favourite colour labrador dropdown")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FavouriteColourLabrador")]
-        public virtual void WelcomePageDisplaysFavouriteColourLabradorDropdown()
+        public virtual void HomepagePageDisplaysFavouriteColourLabradorDropdown()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Welcome page displays favourite colour labrador dropdown", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Homepage page displays favourite colour labrador dropdown", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -120,7 +120,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.Given("the I am on the welcome page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the I am on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
  testRunner.Then("the favourite colour labrador dropdown is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -158,21 +158,18 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 11
- testRunner.Given("the I am on the welcome page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 12
- testRunner.When("I select the favourite colour labrador dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("the I am on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "colour"});
                 table1.AddRow(new string[] {
-                            "black"});
+                            "Black"});
                 table1.AddRow(new string[] {
-                            "yellow"});
+                            "Yellow"});
                 table1.AddRow(new string[] {
-                            "chocolate"});
-#line 13
- testRunner.Then("the list contains colours", ((string)(null)), table1, "Then ");
+                            "Chocolate"});
+#line 12
+ testRunner.Then("the favourite colour labrador dropdown contains colours", ((string)(null)), table1, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
